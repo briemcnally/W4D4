@@ -1,0 +1,10 @@
+<main>
+<% if flash[:success].present? %>
+  <%= flash[:success] %>
+<% end %>
+<h1> User Profile </h1>
+
+<p>
+  Email: <%= current_user.email %>
+</p>
+</main>
